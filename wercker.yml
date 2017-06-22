@@ -46,9 +46,12 @@ deploy-to-kubernetes:
     # Kubernetes configuration.
 
     # `apply` is a good command to use here, as it'll create Kubernetes entities if they are missing.
-    - riceo/kubectl:
+    - sanjeevk1410/kubectl:
         name: deploy to kubernetes
         server: $KUBERNETES_MASTER
+        username: $KUBERNETES_USERNAME
+        password: $KUBERNETES_PASSWORD
+        insecure-skip-tls-verify: true
         gcloud-key-json: $GCP_KEY_JSON
         gke-cluster-name: $GKE_CLUSTER_NAME
         gke-cluster-zone: $GKE_CLUSTER_ZONE
