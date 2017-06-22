@@ -52,8 +52,4 @@ deploy-to-kubernetes:
         username: $KUBERNETES_USERNAME
         password: $KUBERNETES_PASSWORD
         insecure-skip-tls-verify: true
-        gcloud-key-json: $GCP_KEY_JSON
-        gke-cluster-name: $GKE_CLUSTER_NAME
-        gke-cluster-zone: $GKE_CLUSTER_ZONE
-        gke-cluster-project: $GKE_CLUSTER_PROJECT
         command: apply -f $WERCKER_OUTPUT_DIR/kubernetes/
