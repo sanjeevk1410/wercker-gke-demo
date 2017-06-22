@@ -17,9 +17,9 @@ build:
         working-dir: $WERCKER_ROOT
         tag: $WERCKER_GIT_COMMIT
         ports: "8080"
-        username: _json_key
-        password: $GCP_KEY_JSON
-        repository: $GCR_TAG
+        username: $DOCKERHUB_USERNAME
+        password: $DOCKERHUB_PASSWORD
+        repository: $DOCKERHUB_REPO
         registry: $GCR_HOST
 
 deploy-to-kubernetes:
