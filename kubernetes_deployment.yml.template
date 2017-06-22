@@ -24,5 +24,5 @@ spec:
         image: ${DOCKERHUB_REPO}:${WERCKER_GIT_COMMIT}
         ports:
         - name: get-ip-server
-          containerPort: 8001
+          containerPort: 8080
           protocol: TCP
