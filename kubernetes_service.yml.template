@@ -12,7 +12,7 @@ metadata:
     commit: ${WERCKER_GIT_COMMIT}
 spec:
   ports:
-  - port: 8001
+  - port: 80
     targetPort: 8080
   selector:
     app: get-ip
