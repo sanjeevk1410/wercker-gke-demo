@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: get-ip-server
-        image: $DOCKERHUB_REPO:${WERCKER_GIT_COMMIT}
+        image: ${DOCKERHUB_REPO}:${WERCKER_GIT_COMMIT}
         ports:
         - name: get-ip-server
           containerPort: 8080
