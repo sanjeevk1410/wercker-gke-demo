@@ -2,7 +2,7 @@ build:
     box: python:2.7
     steps:
 
-    # Check that our application's tests are passing. Since this is a python
+    # Check that our application's tests are passing. Since this is a pythoN
     # application, our entry script will also install the application's dependencies
     # with Virtualenv
     - script:
