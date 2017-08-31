@@ -18,3 +18,7 @@ spec:
     app: get-ip
     commit: ${WERCKER_GIT_COMMIT}
   type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 144.148.46.151
