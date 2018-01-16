@@ -49,7 +49,6 @@ deploy-to-kubernetes:
     - kubectl:
         name: deploy to kubernetes
         server: $KUBERNETES_MASTER
-        username: $KUBERNETES_USERNAME
-        password: $KUBERNETES_PASSWORD
+        token: $KUBERNETES_TOKEN
         insecure-skip-tls-verify: true
         command: apply -f $WERCKER_OUTPUT_DIR/kubernetes/
