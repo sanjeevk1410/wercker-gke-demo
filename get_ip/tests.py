@@ -4,7 +4,7 @@ import get_ip
 
 
 def test_functional_get_ip():
-    """Set a fake IP and check we get it as a response"""
+    """Set a fake IP & check we get it as a response"""
 
     app = TestApp(get_ip.app)
 
